@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котик із квітами</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 50px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ffaa00;
+        }
+        #cat {
+            display: none;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Натисни "Тиць" і побачиш котика!</h1>
+    <button onclick="showCat()">Тиць</button>
+    <br>
+    <img id="cat" src="https://i.imgur.com/dzF0L8c.png" alt="Котик із букетом">
+    
+    <script>
+        function showCat() {
+            document.getElementById("cat").style.display = "block";
+        }
+    </script>
+</body>
+</html>
